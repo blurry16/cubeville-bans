@@ -52,15 +52,13 @@ data = []
 for i in reversed(string.split("\n")):
     split = i.split(placeholder)[:-1]  # except for the last one cus the last one is an empty string
     print(split)
-    try:
-        data.append({
-            "name": split[0],
-            "date": split[1],
-            "reason": split[2],
-            "duration": split[3],
-        })
-    except IndexError as error:
-        logging.error(error)
+    data.append({
+        "name": split[0],
+        "date": split[1],
+        "reason": split[2],
+        "duration": split[3],
+    })
+
 datafile.dump(data)
 logging.info("Successfully dumped data into the file.")
 print(f"\n{len(datafile.load())} players banned in total. :P")
