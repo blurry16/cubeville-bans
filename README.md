@@ -1,6 +1,6 @@
 <div align="center">
 
-```
+
               ___       ___                                                                
              (   )     (   )                                                               
               | |.-.    | |   ___  ___   ___ .-.     ___ .-.     ___  ___   .--.    .--.   
@@ -14,7 +14,7 @@
                `.__.   (___)   '.__.'   (___)       (___)        (   )' |   (___)  '.__.'  
                                                                   ; `-' '                  
                                                                    .__.'                   
-```
+
   
 # WARNING: Players banned for inappropriate names will feature on this list. If you are uncomfortable with seeing them, do not scroll through bans.json
 
