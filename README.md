@@ -22,10 +22,12 @@ made by
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/blurry16/cv-bans?path=bans.json&label=bans.json%20updated)
 
-Parsed HTML into JSON. All Cubeville Banned players. _Probably nobody needs this..._  
+Parsed HTML into JSON and CSV. All Cubeville Banned players. _Probably nobody needs this..._  
 I'll post the code... but not now. sorry (code is posted, check out parse.py)  
 I'm not related to Cubeville staff, btw  
 
 Do `pip install -r requirements.txt` 
+
+CSV value separator = \t, CSV row separator = \n :D
 
 </div>
