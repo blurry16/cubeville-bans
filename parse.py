@@ -18,12 +18,12 @@ class JsonFile:
         self.file_path: Path = Path(file_path)
 
     def load(self) -> dict | list:
-        """loads data from json file"""
+        """loads data.csv from json file"""
         with open(self.file_path, "r", encoding="UTF-8") as data_file:
             return json.load(data_file)
 
     def dump(self, data: dict | list, indent: int = 2) -> None:
-        """dumps selected data to the file"""
+        """dumps selected data.csv to the file"""
         with open(self.file_path, "w", encoding="UTF-8") as data_file:
             json.dump(data, data_file, indent=indent)
 
@@ -40,17 +40,23 @@ rows = "\n".join(main_content.split("</tr>")).split("<tr>")
 pprint(rows)
 logging.info("Successfully formatted the rows")
 
-separator = "<github.com/blurry16>"  # should be something that you won't usually meet in ban reason
-string = "\n".join(separator.join("".join("".join(rows).split("<td>")[1:]).split("</td>")).split("\n")[:-3]).replace(
-    "\r\n", "")  # dont ask me what in the name of freak is this.  ~ It just works ~.
-pprint(string)
+separator = "\t"  # should be something that you won't usually meet in ban reason
+string = list(reversed(
+    "\n".join(separator.join("".join("".join(rows).split("<td>")[1:]).split("</td>")).split("\n")[:-3]).replace(
+        "\r\n", "").split("\n")))  # dont ask me what in the name of freak is this.  ~ It just works ~.
+
+for index, i in enumerate(string):
+    string[index] = string[index][:-1]  # except for the last one cus the last one is an empty string
+
+string = "\n".join(string)
 logging.info("Successfully formatted the string.")
-with open("data", "w") as file:
+with open("data.csv", "w") as file:
     file.write(string)
+logging.info("Successfully dumped the data into CSV.")
 
 data = []
-for i in reversed(string.split("\n")):
-    split = i.split(separator)[:-1]  # except for the last one cus the last one is an empty string
+for i in string.split("\n"):
+    split = i.split(separator)
     print(split)
     data.append({
         "name": split[0],
@@ -60,5 +66,5 @@ for i in reversed(string.split("\n")):
     })
 
 datafile.dump(data)
-logging.info("Successfully dumped data into the file.")
+logging.info("Successfully dumped data into the JSON.")
 print(f"\n{len(datafile.load())} players banned in total. :P")
