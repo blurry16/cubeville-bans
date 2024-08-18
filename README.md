@@ -6,6 +6,8 @@
 
 Parsed HTML into JSON. All Cubeville Banned players. _Probably nobody needs this..._  
 I'll post the code... but not now. sorry  
-I'm not related to Cubeville staff, btw
+I'm not related to Cubeville staff, btw  
+
+Do `pip install -r requirements.txt` 
 
 </div>
