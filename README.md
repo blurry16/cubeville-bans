@@ -31,5 +31,6 @@ Do `pip install -r requirements.txt`
 CSV value separator = \t, CSV row separator = \n :D
 
 No license provided because the data is not owned by me, and I don't care about script copying.  
-Enjoy.
+Enjoy.  
+_Nah I definitely won't license it. Do whatever you want_
 </div>
