@@ -32,5 +32,5 @@ CSV value separator = \t, CSV row separator = \n :D
 
 Enjoy.  
 
-_Check COPYING_ before enjoying it.
+_Check COPYING before enjoying it._
 </div>
