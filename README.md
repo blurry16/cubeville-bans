@@ -30,6 +30,6 @@ Do `pip install -r requirements.txt`
 
 CSV value separator = \t, CSV row separator = \n :D
 
-No license provided because the data is not owned by me, and I don't care about script copying.  
+Script is licensed under MIT. I don't own data though.
 Enjoy.
 </div>
