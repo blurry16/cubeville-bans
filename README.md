@@ -37,5 +37,6 @@ CSV value separator = \t, CSV row separator = \n :D
 
 Enjoy.
 
-_Check COPYING before enjoying it._
+Source code is licensed under Unlicense. Data is not owned by me.
+
 </div>
