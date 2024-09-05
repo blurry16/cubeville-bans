@@ -33,6 +33,6 @@ Enjoy.
 
 Source code is licensed under Unlicense. Data is not owned by me.
 
-t.me/blurry16, <roma.reznik@gmail.com> Archived 2024
+### _t.me/blurry16, <roma.reznik@gmail.com> Archived 2024_
 
 </div>
