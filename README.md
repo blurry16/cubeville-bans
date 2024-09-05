@@ -18,12 +18,6 @@ made by
 
 <div align="center">  
 
-# Literally archivation notice
-
-So I'm not going to make it as a GitHub archive just because if you'd like contribute to the code you can use issues or
-pull requests. Anyways, I'm not going to update .json and .csv files. Feel free to contact me
-in [Telegram](https://t.me/blurry16).
-
 # WARNING: Players banned for inappropriate names will feature on this list. If you are uncomfortable with seeing them, do not scroll through bans.json and bans.csv
 
 Parsed HTML into JSON and CSV. All Cubeville Banned players.  
@@ -38,5 +32,7 @@ CSV value separator = \t, CSV row separator = \n :D
 Enjoy.
 
 Source code is licensed under Unlicense. Data is not owned by me.
+
+t.me/blurry16, <roma.reznik@gmail.com> Archived 2024
 
 </div>
