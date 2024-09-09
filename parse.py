@@ -18,12 +18,12 @@ class JsonFile:
         self.file_path: Path = Path(file_path)
 
     def load(self) -> dict | list:
-        """loads data.csv from json file"""
+        """loads bans.csv from json file"""
         with open(self.file_path, "r", encoding="UTF-8") as data_file:
             return json.load(data_file)
 
     def dump(self, data: dict | list, indent: int = 2) -> None:
-        """dumps selected data.csv to the file"""
+        """dumps selected bans.csv to the file"""
         with open(self.file_path, "w", encoding="UTF-8") as data_file:
             json.dump(data, data_file, indent=indent)
 
@@ -34,7 +34,7 @@ logging.info("Successfully parsed HTML.")
 # html = soup.prettify()
 main_content = str(soup.find_all(id="main-content")[1])
 
-datafile = JsonFile("bans.json")
+jsonfile = JsonFile("bans.json")
 
 rows = "\n".join(main_content.split("</tr>")).split("<tr>")
 pprint(rows)
@@ -50,7 +50,7 @@ for index, i in enumerate(string):
 
 string = "\n".join(string)
 logging.info("Successfully formatted the string.")
-with open("data.csv", "w") as file:
+with open("bans.csv", "w") as file:
     file.write(string)
 logging.info("Successfully dumped the data into CSV.")
 
@@ -65,6 +65,6 @@ for i in string.split("\n"):
         "duration": split[3],
     })
 
-datafile.dump(data)
+jsonfile.dump(data)
 logging.info("Successfully dumped data into the JSON.")
-print(f"\n{len(datafile.load())} players banned in total. :P")
+print(f"\n{len(jsonfile.load())} players banned in total. :P")
