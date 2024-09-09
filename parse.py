@@ -18,12 +18,12 @@ class JsonFile:
         self.file_path: Path = Path(file_path)
 
     def load(self) -> dict | list:
-        """loads bans.csv from json file"""
+        """loads data from json file"""
         with open(self.file_path, "r", encoding="UTF-8") as data_file:
             return json.load(data_file)
 
     def dump(self, data: dict | list, indent: int = 2) -> None:
-        """dumps selected bans.csv to the file"""
+        """dumps selected data to the file"""
         with open(self.file_path, "w", encoding="UTF-8") as data_file:
             json.dump(data, data_file, indent=indent)
 
