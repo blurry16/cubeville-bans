@@ -50,7 +50,7 @@ for index, i in enumerate(string):
 
 string = "\n".join(string)
 logging.info("Successfully formatted the string.")
-with open("bans.csv", "w") as file:
+with open("bans.csv", "w", encoding="UTF-8") as file:
     file.write(string)
 logging.info("Successfully dumped the data into CSV.")
 
