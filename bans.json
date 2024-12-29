@@ -108,12 +108,6 @@
     "duration": "permanent"
   },
   {
-    "name": "GianniMineCraft",
-    "date": "2011-03-03 16:39:47",
-    "reason": "Exploit",
-    "duration": "permanent"
-  },
-  {
     "name": "SamRomer",
     "date": "2011-03-03 16:39:47",
     "reason": "Greifing",
@@ -24042,12 +24036,6 @@
     "duration": "permanent"
   },
   {
-    "name": "dnhoward",
-    "date": "2013-04-20 14:11:01",
-    "reason": "skirting johnnylikepie2's ban",
-    "duration": "permanent"
-  },
-  {
     "name": "XxFreakOozOIDxX",
     "date": "2013-04-20 15:00:29",
     "reason": "spam",
@@ -29910,12 +29898,6 @@
     "duration": "permanent"
   },
   {
-    "name": "DarthDadJLH",
-    "date": "2013-11-13 12:02:46",
-    "reason": "Johnnylikepie2 Alt.",
-    "duration": "permanent"
-  },
-  {
     "name": "Sly_Booster",
     "date": "2013-11-13 13:32:04",
     "reason": "Advertizing",
@@ -30030,13 +30012,13 @@
     "duration": "permanent"
   },
   {
-    "name": "flash2929",
+    "name": "Firedog_Gunte",
     "date": "2013-11-13 16:30:25",
     "reason": "undefined",
     "duration": "permanent"
   },
   {
-    "name": "Firedog_Gunte",
+    "name": "flash2929",
     "date": "2013-11-13 16:30:25",
     "reason": "undefined",
     "duration": "permanent"
@@ -63966,12 +63948,6 @@
     "duration": "permanent"
   },
   {
-    "name": "that_thing15",
-    "date": "2024-04-09 11:04:16",
-    "reason": "Looks like you greifed a base at 41, -2767 please be advised that greifing is not tolerated here.",
-    "duration": "1 minutes"
-  },
-  {
     "name": "myfella9",
     "date": "2024-05-15 16:04:29",
     "reason": "Enjoy trolling elsewhere, goodbye o/",
@@ -64068,9 +64044,45 @@
     "duration": "permanent"
   },
   {
+    "name": "bananaslug3",
+    "date": "2024-09-07 04:57:16",
+    "reason": "Hey there, this is a reminder not to kill all the rabbits in the pen at CoralKay's farms - The signs state to leave adults so more animals can be bred. This warning expires in 1 minute",
+    "duration": "1 minutes"
+  },
+  {
     "name": "TheRealzKidz",
-    "date": "2024-09-02 18:53:04",
-    "reason": "Hacking in bedwars is against the rules. Please remove all advantage-giving hacks upon returning to our server. Thank you!",
+    "date": "2024-09-08 19:33:41",
+    "reason": "alt of seabastionthenew, banned account. You can apply for unban on our forums if you wish, but may not avoid your ban with new accounts.",
+    "duration": "permanent"
+  },
+  {
+    "name": "LaserPaser",
+    "date": "2024-09-15 08:53:58",
+    "reason": "Minor Greif at a base -1890 864. Greifing is aganist the rules here on cubeville. Please take a look at the rules while on your small break.",
     "duration": "5 minutes"
+  },
+  {
+    "name": "AdamSpeed",
+    "date": "2024-09-18 11:48:34",
+    "reason": "Hey there - just a reminder that breaking builds that are not yours and not replanting crops is griefing and against the rules. You broke a window + farm in Emerald Shores. This warning lasts 5 minutes",
+    "duration": "5 minutes"
+  },
+  {
+    "name": "Z3NFI",
+    "date": "2024-10-08 16:21:47",
+    "reason": "Hey! Just a reminder that cursing/inappropriate language isn't allowed on cv, not even on signs. &lt;3",
+    "duration": "1 minutes"
+  },
+  {
+    "name": "M1ster_B1ll",
+    "date": "2024-10-19 13:59:39",
+    "reason": "Hacks aren't allowed until the witching hour!",
+    "duration": "2 minutes"
+  },
+  {
+    "name": "HugginBark",
+    "date": "2024-10-19 14:44:12",
+    "reason": "Again, hacks are not allowed until the 3 final hours of rift. Please remove them if you decide to return before then, else you may miss out on those hours.",
+    "duration": "1 hours"
   }
 ]

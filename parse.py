@@ -1,12 +1,12 @@
 import json
 import logging
 from pathlib import Path
-from pprint import pprint
 
 from bs4 import BeautifulSoup
 from requests import get
 
 logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("blurry16.cubeville-bans")
 
 BANS_URL = "https://www.cubeville.org/cv-site/banlist.php"
 
@@ -28,17 +28,16 @@ class JsonFile:
             json.dump(data, data_file, indent=indent)
 
 
-logging.info("Parsing HTML...")
+logger.info("Parsing HTML...")
 soup = BeautifulSoup(get(BANS_URL).content, "html.parser")
-logging.info("Successfully parsed HTML.")
+logger.info("Successfully parsed HTML.")
 # html = soup.prettify()
 main_content = str(soup.find_all(id="main-content")[1])
 
 jsonfile = JsonFile("bans.json")
 
 rows = "\n".join(main_content.split("</tr>")).split("<tr>")
-pprint(rows)
-logging.info("Successfully formatted the rows")
+logger.info("Successfully formatted the rows")
 
 separator = "\t"  # should be something that you won't usually meet in ban reason
 string = list(reversed(
@@ -49,22 +48,22 @@ for index, i in enumerate(string):
     string[index] = string[index][:-1]  # except for the last one cus the last one is an empty string
 
 string = "\n".join(string)
-logging.info("Successfully formatted the string.")
+logger.info("Successfully formatted the string.")
 with open("bans.csv", "w", encoding="UTF-8") as file:
     file.write(string)
-logging.info("Successfully dumped the data into CSV.")
+logger.info("Successfully dumped the data into CSV.")
 
 data = []
 for i in string.split("\n"):
     split = i.split(separator)
-    print(split)
     data.append({
         "name": split[0],
         "date": split[1],
         "reason": split[2],
         "duration": split[3],
     })
+print(string)
 
 jsonfile.dump(data)
-logging.info("Successfully dumped data into the JSON.")
+logger.info("Successfully dumped data into the JSON.")
 print(f"\n{len(jsonfile.load())} players banned in total. :P")
